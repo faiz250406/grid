@@ -1,0 +1,88 @@
+body{
+    background-image: url(images/background.jpg);
+}
+img{
+    width:400px;
+}
+.layout{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    /* grid-template-rows:repeat(3,1fr); */
+}
+.g8, .g1{
+    justify-items:end;
+    border:10px solid white;
+    margin:4px;
+}
+.g2, .g9{
+    align-self:center;
+    border:10px solid white;
+    margin:4px;
+}
+.g3{
+    align-self:center;
+}
+.g3, .g10{
+    border:10px solid white;
+    margin:4px;
+}
+.g5 img{
+    border:10px solid white;
+    margin:4px;
+    height:650px;
+}
+.g6, .g12{
+    border:10px solid white;
+    margin:4px;
+}
+.g7 img{
+    border:10px solid white;
+    margin:4px;
+    height:650px;
+}
+.earth img{
+    border:10px solid white;
+    margin:4px;
+}
+.mars img{
+    border:10px solid white;
+    margin:4px;
+}
+.sat img{
+    border:10px solid white;
+    margin:4px;
+}
+.g4 img{
+    border:5px solid white;
+}
+.g16 img{
+    height:750px;
+    border:10px solid white;
+    margin:4px;
+}
+.g15 img{
+    border:10px solid white;
+    margin:4px;
+        height:750px;
+}
+
+
+@media (max-width:769px){
+    .layout{
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+    }
+    .g5 img{
+        height:95%;
+    }
+    .earth img{
+        height:95%;
+    }
+}
+
+@media (max-width:426px){
+    .layout{
+        display:grid;
+        grid-template-columns:repeat(1,1fr)
+    }
+}
